@@ -3,7 +3,7 @@
 }
 
 body {
-    max-width: 980px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -22,6 +22,16 @@ body {
 .position-absolute-lg-static {
     position: absolute;
 }
+/*li{*/
+/*    list-style-type: none;*/
+/*}*/
+/*a {*/
+/*text-decoration: none;*/
+/*}*/
+a:hover{
+    text-decoration: none;
+}
+
 main .stamps-and-visit-cards-heading{
     margin: 20px 0 20px;
     background-color: red;
