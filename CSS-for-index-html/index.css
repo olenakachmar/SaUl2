@@ -1,0 +1,41 @@
+:root{
+    --red: #ed1d24;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.right-5px {
+    right: 5px;
+}
+
+.top-5px {
+    top: 5px;
+}
+
+.position-absolute-lg-static {
+    position: absolute;
+}
+main .stamps-and-visit-cards-heading{
+    margin: 20px 0 20px;
+    background-color: red;
+}
+@media only screen and (min-width: 461px) {
+   main .stamps-and-visit-cards-heading h4{
+       font-size: 1.8em;
+   }
+}
+@media only screen and (min-width: 992px) {
+    .position-absolute-lg-static {
+        position: static;
+    }
+    .left-lg--2rem {
+        left: -2rem;
+    }
+}
