@@ -4,6 +4,9 @@
 header{
     background: var(--red);
 }
+header img {
+    height: 50px;
+}
 
 body {
     max-width: 1500px;
@@ -25,41 +28,75 @@ body {
 .position-absolute-lg-static {
     position: absolute;
 }
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: #f8f9fa;
+}
+main .stamps-and-visit-cards-heading{
+    margin: 20px 0 20px 0;
+    padding: 10px 20px 10px 20px;
+    background: var(--red);
+    }
+main .stamps-and-visit-cards-heading h4{
+    font-size: 1.1rem;
+    }
+main .card{
+    border: 0;
+}
+main .buttonBrowseAllProducts{
+    margin: 20px 0 80px 0;
+}
+main .browseAllProducts{
+    background: var(--red);
+    color: white;
+}
 footer{
     background: var(--red);
 }
-/*li{*/
-/*    list-style-type: none;*/
-/*}*/
-/*a {*/
-/*text-decoration: none;*/
-/*}*/
+
 a:hover{
     text-decoration: none;
-}
-
-main .stamps-and-visit-cards-heading{
-    margin: 20px 0 20px;
-    background-color: red;
 }
 @media only screen and (min-width: 461px) {
     header img{
         margin: 10px;
+        height: 60px;
     }
-   main .stamps-and-visit-cards-heading h4{
-       font-size: 1.8em;
+    .navbar{
+       margin: 15px;
    }
+   main .stamps-and-visit-cards-heading h4{
+       font-size: 1.2rem;
+   }
+   
   
 }
 @media only screen and (min-width: 500px) {
    header h6 {
     font-size: 17px;
 } 
+main .stamps-and-visit-cards-heading{
+    margin: 30px 0 30px 0;
+}
 }
 @media only screen and (min-width: 720px) {
    header h6 {
     font-size: 19px;
 } 
+header img{
+        margin: 10px;
+        height: 70px;
+    }
+    .navbar{
+       margin: 20px;
+   }
+   main .stamps-and-visit-cards-heading{
+    padding: 10px 70px 10px 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
+    main .stamps-and-visit-cards-heading h4 {
+    font-size: 1.3rem;
 }
 @media only screen and (min-width: 767px) {
    header h6 {
@@ -73,4 +110,17 @@ main .stamps-and-visit-cards-heading{
     .left-lg--2rem {
         left: -2rem;
     }
+    header img{
+        margin: 10px;
+        height: 90px;
+    }
+    .navbar{
+       margin: 0;
+   }
+   header .search{
+    margin-top: 20px;
+   }
+   main .stamps-and-visit-cards-heading h4 {
+    font-size: 1.4rem;
+}
 }
