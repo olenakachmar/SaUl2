@@ -10,7 +10,7 @@ header img {
 }
 
 body {
-    max-width: 1500px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -33,6 +33,9 @@ body {
 .navbar-light .navbar-toggler {
     color: rgba(0,0,0,.5);
     border-color: #f8f9fa;
+}
+.font-size-17px{
+    font-size: 17px;
 }
 
 main .stamps-and-visit-cards-heading {
@@ -104,6 +107,7 @@ a:hover {
     .navbar {
         margin: 20px;
     }
+    
 
     main .stamps-and-visit-cards-heading {
         padding: 10px 70px 10px 70px;
@@ -114,10 +118,17 @@ a:hover {
     main .stamps-and-visit-cards-heading h4 {
         font-size: 1.3rem;
     }
+}
 
 @media only screen and (min-width: 767px) {
     header h6 {
         font-size: 24px;
+    }
+    
+}
+@media only screen and (min-width: 720px){
+    header .search {
+        margin: 20px 0 0 0;
     }
 }
 
@@ -129,20 +140,17 @@ a:hover {
      .left-lg--2rem {
         left: -2rem;
     }
-
-     header img {
+    header img {
       margin: 10px;
       height: 90px;
+    }
+    header .form-control{
+        height: 29px;
     }
 
      .navbar {
        margin: 0;
     }
-
-     header .search {
-       margin-top: 20px;
-    }
-
      main .stamps-and-visit-cards-heading h4 {
        font-size: 1.4rem;
     }
