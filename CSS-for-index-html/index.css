@@ -1,9 +1,10 @@
-:root{
-    --red: #ed1d24;
-}
-header{
+:root {
+    --red: #ed1d24; }
+
+header {
     background: var(--red);
 }
+
 header img {
     height: 50px;
 }
@@ -28,99 +29,121 @@ body {
 .position-absolute-lg-static {
     position: absolute;
 }
+
 .navbar-light .navbar-toggler {
     color: rgba(0,0,0,.5);
     border-color: #f8f9fa;
 }
-main .stamps-and-visit-cards-heading{
+
+main .stamps-and-visit-cards-heading {
     margin: 20px 0 20px 0;
     padding: 10px 20px 10px 20px;
     background: var(--red);
-    }
-main .stamps-and-visit-cards-heading h4{
+}
+
+main .stamps-and-visit-cards-heading h4 {
     font-size: 1.1rem;
-    }
-main .card{
+}
+
+main .card {
     border: 0;
 }
-main .buttonBrowseAllProducts{
+
+main .buttonBrowseAllProducts {
     margin: 20px 0 80px 0;
 }
-main .browseAllProducts{
+
+main .browseAllProducts {
     background: var(--red);
     color: white;
 }
-footer{
+
+footer {
     background: var(--red);
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
+
 @media only screen and (min-width: 461px) {
-    header img{
+    header img {
         margin: 10px;
         height: 60px;
     }
-    .navbar{
-       margin: 15px;
-   }
-   main .stamps-and-visit-cards-heading h4{
-       font-size: 1.2rem;
-   }
-   
-  
+
+    .navbar {
+        margin: 15px;
+    }
+
+    main .stamps-and-visit-cards-heading h4 {
+        font-size: 1.2rem;
+    }
 }
+
 @media only screen and (min-width: 500px) {
-   header h6 {
-    font-size: 17px;
-} 
-main .stamps-and-visit-cards-heading{
-    margin: 30px 0 30px 0;
+    header h6 {
+        font-size: 17px;
+    }
+
+    main .stamps-and-visit-cards-heading {
+        margin: 30px 0 30px 0;
+    }
 }
-}
+
 @media only screen and (min-width: 720px) {
-   header h6 {
-    font-size: 19px;
-} 
-header img{
+    header h6 {
+        font-size: 19px;
+    }
+
+    header img {
         margin: 10px;
         height: 70px;
     }
-    .navbar{
-       margin: 20px;
-   }
-   main .stamps-and-visit-cards-heading{
-    padding: 10px 70px 10px 70px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+    .navbar {
+        margin: 20px;
     }
+
+    main .stamps-and-visit-cards-heading {
+        padding: 10px 70px 10px 70px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
     main .stamps-and-visit-cards-heading h4 {
-    font-size: 1.3rem;
-}
+        font-size: 1.3rem;
+    }
+
 @media only screen and (min-width: 767px) {
-   header h6 {
-    font-size: 24px;
-} 
+    header h6 {
+        font-size: 24px;
+    }
 }
+
 @media only screen and (min-width: 992px) {
     .position-absolute-lg-static {
         position: static;
     }
-    .left-lg--2rem {
+
+     .left-lg--2rem {
         left: -2rem;
     }
-    header img{
-        margin: 10px;
-        height: 90px;
+
+     header img {
+      margin: 10px;
+      height: 90px;
     }
-    .navbar{
+
+     .navbar {
        margin: 0;
-   }
-   header .search{
-    margin-top: 20px;
-   }
-   main .stamps-and-visit-cards-heading h4 {
-    font-size: 1.4rem;
-}
+    }
+
+     header .search {
+       margin-top: 20px;
+    }
+
+     main .stamps-and-visit-cards-heading h4 {
+       font-size: 1.4rem;
+    }
 }
