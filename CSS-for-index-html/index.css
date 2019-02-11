@@ -1,9 +1,12 @@
 :root{
     --red: #ed1d24;
 }
+header{
+    background: var(--red);
+}
 
 body {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -22,6 +25,9 @@ body {
 .position-absolute-lg-static {
     position: absolute;
 }
+footer{
+    background: var(--red);
+}
 /*li{*/
 /*    list-style-type: none;*/
 /*}*/
@@ -37,9 +43,28 @@ main .stamps-and-visit-cards-heading{
     background-color: red;
 }
 @media only screen and (min-width: 461px) {
+    header img{
+        margin: 10px;
+    }
    main .stamps-and-visit-cards-heading h4{
        font-size: 1.8em;
    }
+  
+}
+@media only screen and (min-width: 500px) {
+   header h6 {
+    font-size: 17px;
+} 
+}
+@media only screen and (min-width: 720px) {
+   header h6 {
+    font-size: 19px;
+} 
+}
+@media only screen and (min-width: 767px) {
+   header h6 {
+    font-size: 24px;
+} 
 }
 @media only screen and (min-width: 992px) {
     .position-absolute-lg-static {
