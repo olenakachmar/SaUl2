@@ -11,9 +11,8 @@
         <title>СаЮл</title>
     </head>
     <body>
-        
-            <header>
-                <div class="container">
+        <header class="changeColor">
+            <div class="container">
                 <div class="row no-gutters justify-content-center text-white">
                     <div class="col order-1 align-self-center">
                         <img class="d-block mw-100" src="images/saul_logo.png" alt="Лого фірми СаЮл">
@@ -109,13 +108,25 @@
                         </nav>
                     </div>
                     <div class="col-12 order-4 order-lg-3 col-lg align-self-center ">
-                        <div class="font-size-17px row no-gutters justify-content-between ">
+                        <div class="padding-bottom-10px font-size-17px row no-gutters justify-content-between ">
                             <div class="col-auto ml-lg-auto col-lg-8 order-first order-lg-last ">
                                 <div class="d-lg-none">
                                     <i class="fas fa-search"></i>
                                 </div>
                                 <div class="search d-none d-lg-block">
                                     <input class="form-control" type="text" placeholder="Пошук" aria-label="Search">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="d-lg-none">
+                                    <a href="#" class="buttonChangeColor text-white">
+                                        <i class="fas fa-palette"></i>
+                                    </a>
+                                </div>
+                                <div class="d-none d-lg-block">
+                                    <a href="#" class="buttonChangeColor text-white">
+                                        <i class="fas fa-palette"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-auto ">
@@ -136,13 +147,14 @@
                                 </div>
                                 <div class="d-none d-lg-block">Увійти</div>
                             </div>
-                            <div class="w-100 d-none d-lg-block"></div>
                         </div>
                     </div>
                 </div>
-            </header>
-            <main>
-                <div class="no-gutters ">
+            </div>
+        </header>
+        <main>
+            <div class="no-gutters ">
+                <div class="container">
                     <div id="carouselOdProductsDiscount" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselOdProductsDiscount" data-slide-to="0" class="active"></li>
@@ -169,17 +181,19 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <div class="stamps-and-visit-cards-heading text-center text-white">
-                        <h4 id="#stamps">Печатки та штампи під замовлення, тиснення, заправки та штемпельні подушки</h4>
-                    </div>
                 </div>
+                <div class="changeColor stamps-and-visit-cards-heading text-center text-white">
+                    <h4 id="#stamps">Печатки та штампи під замовлення, тиснення, заправки та штемпельні подушки</h4>
+                </div>
+            </div>
+            <div class="container">
                 <div class="row no-gutters justify-content-center">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
                         <div class="card">
                             <img class="card-img-top" src="images/photos_of_stamps_and_seils/address-stamps.jpg" alt="Адресні штампи">
                             <div class="card-body p-0">
-                                <div class="card-name">
-                                    <a href="#">
+                                <div class="card-name text-center">
+                                    <a href="#" id="buttonToToggle" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Адресні штампи</h5>
                                     </a>
                                 </div>
@@ -206,8 +220,8 @@
                         <div class="card">
                             <img class="card-img-top" src="images/photos_of_stamps_and_seils/inspection-stamps.jpg" alt="Маркувальні штампи">
                             <div class="card-body p-0">
-                                <div class="card-name">
-                                    <a href="#">
+                                <div class="card-name text-center">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Маркувальні штампи</h5>
                                     </a>
                                 </div>
@@ -237,8 +251,8 @@
                         <div class="card">
                             <img class="card-img-top" src="images/photos_of_stamps_and_seils/office-stamps.jpg" alt="Офісні штампи">
                             <div class="card-body p-0">
-                                <div class="card-name">
-                                    <a href="#">
+                                <div class="card-name text-center">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Офісні штампи</h5>
                                     </a>
                                 </div>
@@ -274,8 +288,8 @@
                         <div class="card">
                             <img class="card-img-top" src="images/photos_of_stamps_and_seils/corporate-seal-stamps.jpg" alt="Печатки">
                             <div class="card-body p-0">
-                                <div class="card-name">
-                                    <a href="#">
+                                <div class="card-name text-center">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Печатки</h5>
                                     </a>
                                 </div>
@@ -305,8 +319,8 @@
                         <div class="card">
                             <img class="card-img-top" src="images/photos_of_stamps_and_seils/date-stamps.jpg" alt="Датери">
                             <div class="card-body p-0">
-                                <div class="card-name">
-                                    <a href="#">
+                                <div class="card-name text-center">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Датери</h5>
                                     </a>
                                 </div>
@@ -327,8 +341,8 @@
                         <div class="card">
                             <img class="card-img-top" src="images/photos_of_stamps_and_seils/alpha-numeric.jpg" alt="Нумератори">
                             <div class="card-body p-0">
-                                <div class="card-name">
-                                    <a href="#">
+                                <div class="card-name text-center">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Нумератори</h5>
                                     </a>
                                 </div>
@@ -352,8 +366,8 @@
                         <div class="card">
                             <img class="card-img-top" src="images/photos_of_stamps_and_seils/signature-stamps.jpg" alt="Факсимільє">
                             <div class="card-body p-0">
-                                <div class="card-name">
-                                    <a href="#">
+                                <div class="card-name text-center">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Факсимільє</h5>
                                     </a>
                                 </div>
@@ -371,8 +385,8 @@
                         <div class="card">
                             <img class="card-img-top" src="images/photos_of_stamps_and_seils/logo-art-stamps.jpg" alt="Дизайнерські та логотипні штампи">
                             <div class="card-body p-0">
-                                <div class="card-name">
-                                    <a href="#">
+                                <div class="card-name text-center">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Дизайнерські та логотипні штампи</h5>
                                     </a>
                                 </div>
@@ -388,17 +402,19 @@
                     </div>
                 </div>
                 <div class="buttonBrowseAllProducts text-center">
-                    <a href="#" class="browseAllProducts btn btn-lg active" role="button" aria-pressed="true">Переглянути всі продукти</a>
+                    <a href="#" class="changeColor browseAllProducts btn btn-lg active" role="button" aria-pressed="true">Переглянути всі продукти</a>
                 </div>
-                <div class="stamps-and-visit-cards-heading text-center text-white">
-                    <h4 id="#poligraphy">Візитки, таблички, сувенірна продукція</h4>
-                </div>
+            </div>
+            <div class="changeColor stamps-and-visit-cards-heading text-center text-white">
+                <h4 id="#poligraphy">Візитки, таблички, сувенірна продукція</h4>
+            </div>
+            <div class="container">
                 <div class="row no-gutters justify-content-center">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
                         <div class="card">
                             <img class="card-img-top" src="images/visit-cards-photos/business-card.jpg" alt="Фото візитної карточки">
                             <div class="card-body p-0">
-                                <div class="card-name">
+                                <div class="card-name text-center">
                                     <a href="#">
                                         <h5 class="card-title text-center">Візитні карточки</h5>
                                     </a>
@@ -426,7 +442,7 @@
                         <div class="card">
                             <img class="card-img-top" src="images/plaques/plaques.jpg" alt="Таблички">
                             <div class="card-body p-0">
-                                <div class="card-name">
+                                <div class="card-name text-center">
                                     <a href="#">
                                         <h5 class="card-title text-center">Таблички</h5>
                                     </a>
@@ -460,7 +476,7 @@
                         <div class="card">
                             <img class="card-img-top" src="images/souvenirs-photos/souvenirs.jpg" alt="Сувеніри">
                             <div class="card-body p-0">
-                                <div class="card-name">
+                                <div class="card-name text-center">
                                     <a href="#">
                                         <h5 class="card-title text-center">Суверніри</h5>
                                     </a>
@@ -486,114 +502,161 @@
                     </div>
                 </div>
                 <div class="buttonBrowseAllProducts text-center">
-                    <a href="#" class="browseAllProducts btn btn-lg active" role="button" aria-pressed="true">Переглянути всі продукти</a>
+                    <a href="#" class="changeColor browseAllProducts btn btn-lg active" role="button" aria-pressed="true">Переглянути всі продукти</a>
                 </div>
-            </main>
-            <!-- Footer -->
-            <footer class="page-footer font-small mdb-color pt-4 text-white ">
-                <!-- Footer Links -->
-                <div class="container text-left text-md-left">
-                    <!-- Footer links -->
-                    <div class="row text-left text-md-left mt-3 pb-3">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold ">Приватне підприємство "СаЮл"</h6>
-                            <p class="text-left">Шановні клієнти! Якщо у Вас виникли зауваження чи пропозиції з якості обслуговування, звертайтесь за тел.:
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.0010528614666!2d24.023565015601452!3d49.84243773886814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add724727cfb5%3A0xc473f7cf13147c00!2z0KHQsNCu0Ls!5e0!3m2!1suk!2sua!4v1550019798855" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="changeColor page-footer font-small mdb-color pt-4 text-white ">
+            <!-- Footer Links -->
+            <div class="container text-left text-md-left">
+                <!-- Footer links -->
+                <div class="row text-left text-md-left mt-3 pb-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold ">Приватне підприємство "СаЮл"</h6>
+                        <p class="text-left">Шановні клієнти! Якщо у Вас виникли зауваження чи пропозиції з якості обслуговування, звертайтесь за тел.:
                             </p>
-                            <p class="text-left">+ 38 050 317 25 36
+                        <p class="text-left">+ 38 050 317 25 36
                             </p>
-                            <p class="text-left">з 10-00 до 20-00
+                        <p class="text-left">з 10-00 до 20-00
                             </p>
-                        </div>
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none">
-                        <!-- Grid column -->
-                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Корисна інформація</h6>
-                            <p class="text-left">
-                                Ми працюємо для Вас:
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Корисна інформація</h6>
+                        <p class="text-left">
+                            Ми працюємо для Вас:
                                     <span class="text-left">Понеділок – Пятниця</span>
-                                з 9-00  до 19-00
+                            з 9-00  до 19-00
                                     <span class="text-left">Субота</span>
-                                з 10-00 до 15-00
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                        <hr class="w-100 clearfix d-md-none">
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">Контакти</h6>
-                            <p>
-                                <i class="fas fa-home mr-3"></i>
-                                Україна, 79007 м. Львів, вул. Леся Курбаса, 10
-                            </p>
-                            <p>
-                                <i class="fas fa-envelope mr-3"></i>
-                                saullviv94@gmail.com
-                            </p>
-                            <p>
-                                <i class="fas fa-phone mr-3"></i>
-                                +38 063-276-99-59
-                            </p>
-                            <p>
-                                <i class="fas fa-print mr-3"></i>
-                                +38 032-260-15-33
-                            </p>
-                        </div>
-                        <!-- Grid column -->
+                            з 10-00 до 15-00
+                        
+                
+                        </p>
                     </div>
-                    <!-- Footer links -->
-                    <hr>
-                    <!-- Grid row -->
-                    <div class="row d-flex align-items-center">
-                        <!-- Grid column -->
-                        <div class="col-md-7 col-lg-8">
-                            <!--Copyright-->
-                            <p class="text-center text-md-left">© 2019 Copyright: Штемпельно-граверна майстерня "СаЮл-94"
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-5 col-lg-4 ml-lg-0">
-                            <!-- Social buttons -->
-                            <div class="text-center text-md-right">
-                                <ul class="list-unstyled list-inline">
-                                    <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                            <i class="fab fa-google-plus-g"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Grid column -->
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Контакти</h6>
+                        <p>
+                            <i class="fas fa-home mr-3"></i>
+                            Україна, 79007 м. Львів, вул. Леся Курбаса, 10
+                        
+                
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i>
+                            saullviv94@gmail.com
+                        
+                
+                        </p>
+                        <p>
+                            <i class="fas fa-phone mr-3"></i>
+                            +38 063-276-99-59
+                        
+                
+                        </p>
+                        <p>
+                            <i class="fas fa-print mr-3"></i>
+                            +38 032-260-15-33
+                        
+                
+                        </p>
                     </div>
-                    <!-- Grid row -->
+                    <!-- Grid column -->
                 </div>
-                <!-- Footer Links -->
-            </footer>
+                <!-- Footer links -->
+                <hr>
+                <!-- Grid row -->
+                <div class="row d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8">
+                        <!--Copyright-->
+                        <p class="text-center text-md-left">© 2019 Copyright: Штемпельно-граверна майстерня "СаЮл-94"
+                            </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0">
+                        <!-- Social buttons -->
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+        </footer>
+        <!--Modal Refference Sendler-->
+        <div class="modal fade" id="modalRefferenceSenfdler" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="theme-name" class="col-form-label">Тема:</label>
+                                <input type="text" class="form-control" id="theme-name" placeholder="tt">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Повідомлення</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        <script type="text/javascript" src=js/smooth-scroll.js></script>
-        <!--<script type="text/javascript" src="js/slider-syncing"></script>-->
+        <script src=js/smooth-scroll.js></script>
+        <script src="js/colorChangingButton.js"></script>
+        <script src="js/modalMessageSender.js"></script>
     </body>
 </html>
