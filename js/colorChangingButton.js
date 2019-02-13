@@ -1,12 +1,18 @@
 function getCookie(name) {
-  var value = "; " + document.cookie;
-  var parts = value.split("; " + name + "=");
+  let value = "; " + document.cookie;
+  let parts = value.split("; " + name + "=");
   if (parts.length == 2) return parts.pop().split(";").shift();
 }
 
 $( document ).ready(function() {
     $(".changeColor").css("background-color", getCookie("color"));
 });
+
+// $( document ).ready(function() {
+//     $("body").hide();
+//     $(".changeColor").css("background-color", getCookie("color"));
+//     $("body").show();
+// });
 
 const arr=["black", "green", "blue", "red", "#17a2b8"]
 

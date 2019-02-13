@@ -137,15 +137,11 @@
                             </div>
                             <div class="col-auto">
                                 <div class="d-lg-none">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="d-none d-lg-block">Мій аккаунт</div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="d-lg-none">
                                     <i class="fas fa-user"></i>
                                 </div>
-                                <div class="d-none d-lg-block">Увійти</div>
+                                <div class="d-none d-lg-block">
+                                    <a class="text-white" href="#" data-toggle="modal" data-target="#loginModal">Увійти</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -415,7 +411,7 @@
                             <img class="card-img-top" src="images/visit-cards-photos/business-card.jpg" alt="Фото візитної карточки">
                             <div class="card-body p-0">
                                 <div class="card-name text-center">
-                                    <a href="#">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Візитні карточки</h5>
                                     </a>
                                 </div>
@@ -443,7 +439,7 @@
                             <img class="card-img-top" src="images/plaques/plaques.jpg" alt="Таблички">
                             <div class="card-body p-0">
                                 <div class="card-name text-center">
-                                    <a href="#">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Таблички</h5>
                                     </a>
                                 </div>
@@ -477,7 +473,7 @@
                             <img class="card-img-top" src="images/souvenirs-photos/souvenirs.jpg" alt="Сувеніри">
                             <div class="card-body p-0">
                                 <div class="card-name text-center">
-                                    <a href="#">
+                                    <a href="#" class="btn buttonToToggle" data-toggle="modal" data-target="#modalRefferenceSenfdler">
                                         <h5 class="card-title text-center">Суверніри</h5>
                                     </a>
                                 </div>
@@ -538,6 +534,7 @@
                             з 10-00 до 15-00
                         
                 
+                        
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -550,24 +547,28 @@
                             Україна, 79007 м. Львів, вул. Леся Курбаса, 10
                         
                 
+                        
                         </p>
                         <p>
                             <i class="fas fa-envelope mr-3"></i>
                             saullviv94@gmail.com
                         
                 
+                        
                         </p>
                         <p>
                             <i class="fas fa-phone mr-3"></i>
                             +38 063-276-99-59
                         
                 
+                        
                         </p>
                         <p>
                             <i class="fas fa-print mr-3"></i>
                             +38 032-260-15-33
                         
                 
+                        
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -622,7 +623,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Залиште нам повідомлення</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -644,19 +645,62 @@
                         </form>
                     </div>
                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+                        <button type="button" class="btn btn-primary">Відправити повідомлення</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Login Modal-->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Логін форма</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login-form">
+                            <form action="/examples/actions/confirmation.php" method="post">
+                                <h2 class="text-center">Увійти</h2>
+                                <div class="form-group">
+                                    <input type="text" id="login" class="form-control" placeholder="Ім'я" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Пароль" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Увійти</button>
+                                </div>
+                                <div class="clearfix">
+                                    <label class="pull-left checkbox-inline">
+                                        <input type="checkbox">Запамятати мене
+                                    </label>
+                                    <a href="#" class="pull-right">Забули пароль?</a>
+                                </div>
+                            </form>
+                            <p class="text-center">
+                                <a href="#">Створити аккаунт</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script src=js/smooth-scroll.js></script>
         <script src="js/colorChangingButton.js"></script>
         <script src="js/modalMessageSender.js"></script>
+        <script src="js/login.js"></script>
     </body>
 </html>

@@ -52,6 +52,16 @@ main .stamps-and-visit-cards-heading {
 main .stamps-and-visit-cards-heading h4 {
     font-size: 1.1rem;
 }
+/*.carousel-control-next-icon, .carousel-control-prev-icon {*/
+/*    display: inline-block;*/
+/*    width: 40px !important;*/
+/*    height: 40px;*/
+/*    background: #dc3545 no-repeat center center;*/
+/*    background-size: 100% 100%;*/
+/*}*/
+/*.carousel-control-next-icon {*/
+/*    background-image: url(images/arrow.png);*/
+/*}*/
 
 main .card {
     border: 0;
