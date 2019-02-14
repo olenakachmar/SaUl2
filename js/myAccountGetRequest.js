@@ -1,3 +1,4 @@
+$(document).ready(function() {
  $.get("https://reqres.in/api/users/2", function(data){
     console.log(data.data.avatar);
     $("#userImage").attr("src", data.data.avatar);
