@@ -35,4 +35,7 @@ $(document).ready(function() {
         $(".changeColor").css("background-color",currentColor );
         document.cookie="color="+currentColor;
     }
+    
+    $("body").css("display","block");
 })
+

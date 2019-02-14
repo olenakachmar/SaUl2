@@ -1,8 +1,8 @@
 :root {
-    --red: #ed1d24; }
+    --blue: #17a2b8; }
 
 header {
-    background: var(--red);
+    background: var(--blue);
 }
 
 header img {
@@ -12,6 +12,7 @@ header img {
 body {
     max-width: 2000px;
     margin: auto;
+    display: none;
 }
 
 .z-index-1 {
@@ -46,7 +47,7 @@ body {
 main .stamps-and-visit-cards-heading {
     margin: 20px 0 20px 0;
     padding: 10px 20px 10px 20px;
-    background: var(--red);
+    background: var(--blue);
 }
 
 main .stamps-and-visit-cards-heading h4 {
@@ -72,7 +73,7 @@ main .buttonBrowseAllProducts {
 }
 
 main .browseAllProducts {
-    background: var(--red);
+    background: var(--blue);
     color: white;
 }
 
@@ -82,11 +83,18 @@ main .map iframe {
 }
 
 footer {
-    background: var(--red);
+    background: var(--blue);
 }
 
 a:hover {
     text-decoration: none;
+}
+main .contactUs {
+    margin: 0 0 20px 20px;
+    padding: 30px 0 0 0;
+}
+.contact-us-info{
+    margin-bottom: 60px;
 }
 
 @media only screen and (min-width: 461px) {
@@ -103,6 +111,13 @@ a:hover {
         font-size: 1.2rem;
     }
 }
+
+/*MY ACCOUNT.HTML*/
+.myAccountUserInfo{
+    font-size: 30px;
+}
+
+/*END MY ACCOUNT.HTML*/
 
 @media only screen and (min-width: 500px) {
     header h6 {
@@ -136,6 +151,9 @@ a:hover {
 
     main .stamps-and-visit-cards-heading h4 {
         font-size: 1.3rem;
+    }
+    .address-working-hours{
+        margin-top: 20px;
     }
 }
 
@@ -175,5 +193,8 @@ a:hover {
 
     main .stamps-and-visit-cards-heading h4 {
         font-size: 1.4rem;
+    }
+    .address-working-hours{
+        margin-top: 0;
     }
 }

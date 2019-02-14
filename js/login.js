@@ -1,17 +1,17 @@
-// //ще не готове
-
-$(document).ready(function(){
+$(document).ready(function() {
   $("#login").click(function(){
-    alert("ready");
     $.ajax({
-    type: "POST",
-    data: {
-    "email": $(email).val(),
-    "password": "cityslicka"
-	},
-    url: "https://reqres.in/api/login",
-    success: function(result){
-      console(result.toString());
-    }});
-  });
-});
+      type: "POST",
+      url: "https://reqres.in/api/login",
+      data: {
+        email: $("#userName").val(),
+        password: $("#userPassword").val()
+      },
+      success: function(data){
+          $("#loginHeader").replaceWith($("#myAccountHeader"));
+          $("#loginModal").modal('toggle');
+      }
+    })
+  
+  })
+  
